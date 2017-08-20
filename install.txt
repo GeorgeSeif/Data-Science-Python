@@ -1,0 +1,6 @@
+sudo apt-get install python-pip  
+sudo pip install numpy scipy
+sudo pip install pandas
+sudo apt-get install python-matplotlib
+sudo pip install -U scikit-learn
+sudo pip install tabulate
