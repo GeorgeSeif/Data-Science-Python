@@ -34,8 +34,8 @@ hist_feature_name='color_intensity'
 bin_edges = np.arange(0, data[hist_feature_name].max() + 1, 1)
 fig = plt.hist(data[hist_feature_name], bins=bin_edges)
 
-plt.xlabel('count')
-plt.ylabel(hist_feature_name)
+plt.ylabel('count')
+plt.xlabel(hist_feature_name)
 plt.show()
 
 
