@@ -24,6 +24,7 @@ To install all of the libraries, run the commands in the "install.txt" file. The
 - **helpers.py:** Helper functions. adapted from the [Python Machine Learning](https://github.com/GeorgeSeif/Python-Machine-Learning) repository
 - **explore_wine_data.py:** Exploratory data analysis of the wine dataset from sklearn using visualisations. Includes data analysis using histogram, scatterplot, bee swarm plot, and cumulative distribution function.
 - **statistics_iris.py:** Compute various statistics of the iris dataset features such as histogram, min, max, median, mean, and variance.
+- **covariance_boston.py:** Compute the covariance matrix of the Boston Housing dataset. These matrices can sometimes give faster insight into which variables are related rather than creating scatter plots.
 
 ## Information
 
@@ -36,6 +37,7 @@ To install all of the libraries, run the commands in the "install.txt" file. The
 #### Statistics
 - **Mean and Median:** Both of these show a type of "average" or "center" value for a particular feature variable. The mean is the more literal and precise center; however median is much more robust to outliers which may pull the mean value calculation far away from the majority of the values. 
 - **Variance and Standard Deviation:** Useful for seeing to what degree the feature variable of a dataset varies across all example i.e are most of the values for this particular feature variable similar across the dataset or are they all very different.  
+- **Covariance Matrix:** The covariance of two variables measures how "correlated" they are. If the two variables have a positive covariance, then one when variable increases so does the other; with a negative covariance the values of the feature variables will change in opposite directions. The magnitude of the covariance determines how strongly the features are correlated. A high covariance value means that when one of the feature variables changes by an amount x, the other will change by an amount very close to x; vice versa for low covariance values. 
 
 
 #### Examples
