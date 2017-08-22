@@ -6,7 +6,7 @@ from tabulate import tabulate
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_boston
 
-import helpers as helpers
+import ml_helpers as helpers
 
 # NOTE that this loads as a dictionairy
 boston_data = load_boston()
