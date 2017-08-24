@@ -1,7 +1,7 @@
 # Python Data Science
 
 ## Description
-A collection of data science scripts for data analysis in Python. 
+A collection of data science scripts for data analysis in Python. Please also see my related repository [Python Machine Learning](https://github.com/GeorgeSeif/Python-Machine-Learning) which contains many implementations of Machine Learning algorithms including _regression_, _classification_, and _clustering_. The algorithms are implemented in two ways: from scratch in Python and using Scikit Learn functions. 
 
 Python libraries used:
 - Numpy
@@ -26,10 +26,6 @@ To install all of the libraries, run the commands in the "install.txt" file. The
 - **explore_wine_data.py:** Exploratory data analysis of the wine dataset from sklearn using visualisations. Includes data analysis using histogram, scatterplot, bee swarm plot, and cumulative distribution function.
 - **statistics_iris.py:** Compute various statistics of the iris dataset features such as histogram, min, max, median, mean, and variance.
 - **covariance_boston.py:** Compute the covariance matrix of the Boston Housing dataset. These matrices can sometimes give faster insight into which variables are related rather than creating scatter plots.
-- **linear_regression.py:** Linear regression on the Boston Housing dataset. Includes data shuffling and normalization. Includes an implementation from scratch and Sklearn.
-- **logistic_regression.py:** Logistic regression on the wine dataset. Includes data shuffling and normalization. Includes an implementation from scratch and Sklearn.
-- **pca_logistic_regression.py:** Logistic regression with Principal Component Analysis (PCA) for dimensionality reduction on the wine dataset. Includes data shuffling and normalization. Includes an implementation from scratch and Sklearn.
-- **kmeans.py, kmediods.py, k_nearnest_neighbor.py, mean_shift.py, dbscan.py:** Different clustering methods applied to the iris dataset. Includes data shuffling and normalization. Includes an implementation from scratch and Sklearn.
 
 ## Information
 
