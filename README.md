@@ -49,30 +49,30 @@ To install all of the libraries, run the commands in the "install.txt" file. The
 ### Pandas Data Science
 
 #### Basic Dataset Information
-**Read in a CSV dataset:** `pd.DataFrame.from_csv("csv_file")` OR `pd.read_csv("csv_file")`
-**Read in an Excel dataset:** `pd.read_excel("excel_file")`
-**Basic dataset feature info:** `df.info()`
-**Basic dataset statistics:** `print(df.describe())` 
-**Print dataframe in a table:** `print(tabulate(print_table, headers=headers))` where "print_table" is a list of lists and "headers" is a list of the string headers
+- **Read in a CSV dataset:** `pd.DataFrame.from_csv("csv_file")` OR `pd.read_csv("csv_file")`
+- **Read in an Excel dataset:** `pd.read_excel("excel_file")`
+- **Basic dataset feature info:** `df.info()`
+- **Basic dataset statistics:** `print(df.describe())` 
+- **Print dataframe in a table:** `print(tabulate(print_table, headers=headers))` where "print_table" is a list of lists and "headers" is a list of the string headers
 
 #### Basic Data Handling
-**Drop missing data:** `df.dropna(axis=0, how='any')` Return object with labels on given axis omitted where alternately any or all of the data are missing
-**Replace missing data:** `df.replace(to_replace=None, value=None)` Replace values given in "to_replace" with "value".
-**Check for NANs:** `pd.isnull(object)` Detect missing values (NaN in numeric arrays, None/NaN in object arrays)
-**Drop a feature:** `df.drop('feature_variable_name', axis=1)` axis is either 0 for rows, 1 for columns
-**Convert object type to float:** `pd.to_numeric(df["feature_name"], errors='coerce')` Convert object types to numeric to be able to perform compuations
-**Convert DF to numpy array:** `df.as_matrix()`
-**Get first "n" rows:** `df.head([n])`
-**Get data by feature name:** `df.loc[feature_name]`
+- **Drop missing data:** `df.dropna(axis=0, how='any')` Return object with labels on given axis omitted where alternately any or all of the data are missing
+- **Replace missing data:** `df.replace(to_replace=None, value=None)` Replace values given in "to_replace" with "value".
+- **Check for NANs:** `pd.isnull(object)` Detect missing values (NaN in numeric arrays, None/NaN in object arrays)
+- **Drop a feature:** `df.drop('feature_variable_name', axis=1)` axis is either 0 for rows, 1 for columns
+- **Convert object type to float:** `pd.to_numeric(df["feature_name"], errors='coerce')` Convert object types to numeric to be able to perform compuations
+- **Convert DF to numpy array:** `df.as_matrix()`
+- **Get first "n" rows:** `df.head([n])`
+- **Get data by feature name:** `df.loc[feature_name]`
 
 #### Basic Plotting
-**Area plot:** `df.plot.area([x, y])`	
-**Vertical bar plot:** `df.plot.bar([x, y])`
-**Horizontal bar plot:** `df.plot.barh([x, y])`	
-**Boxplot:** `df.plot.box([by])`
-**Histogram:** `df.plot.hist([by, bins])`
-**Line plot:** `df.plot.line([x, y])`	
-**Pie chart:** `df.plot.pie([y])`	
+- **Area plot:** `df.plot.area([x, y])`	
+- **Vertical bar plot:** `df.plot.bar([x, y])`
+- **Horizontal bar plot:** `df.plot.barh([x, y])`	
+- **Boxplot:** `df.plot.box([by])`
+- **Histogram:** `df.plot.hist([by, bins])`
+- **Line plot:** `df.plot.line([x, y])`	
+- **Pie chart:** `df.plot.pie([y])`	
 
 
 
