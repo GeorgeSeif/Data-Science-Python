@@ -78,6 +78,16 @@ If _correlation coefficient is –1_, the variables are perfectly negatively cor
 - **Pie chart:** `df.plot.pie([y])`	
 
 
+### Matplotlib Plotting
+- **Scatter plot:** `scatter(x_data, y_data, s = 30, color = '#539caf', alpha = 0.75)`
+- **Line plot:** `plot(x_data, y_data, lw = 2, color = '#539caf', alpha = 1)`
+- **Histogram:** `hist(data, n_bins, color = '#539caf')` 
+- **Probability Density Function:** plot(x_data, density_est(x_data), color = '#539caf', lw = 2) Where `density_est(x_data)` computes the probability density of each data point
+- **Bar plot:** `bar(x_data, y_data, color = '#539caf', align = 'center')`
+- **Box plot:** `boxplot(y_data)` We set the x_data using the x-axis tick labels on the plot `set_xticklabels(x_data)`
+
+
+
 
 ### Examples
 ![alt text](https://github.com/GeorgeSeif/Data-Science-Python/blob/master/Images/explore_wine_scattermatrix.png)

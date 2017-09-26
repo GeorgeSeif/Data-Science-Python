@@ -1,6 +1,6 @@
 import matplotlib
  
-def scatterplot(x_data, y_data, x_label, y_label, title):
+def scatterplot(x_data, y_data, x_label="", y_label="", title=""):
 
     # Create the plot object
     _, ax = plt.subplots()
@@ -15,7 +15,7 @@ def scatterplot(x_data, y_data, x_label, y_label, title):
     ax.set_ylabel(y_label)
 
 
-def lineplot(x_data, y_data, x_label, y_label, title):
+def lineplot(x_data, y_data, x_label="", y_label="", title=""):
     # Create the plot object
     _, ax = plt.subplots()
 
@@ -30,7 +30,7 @@ def lineplot(x_data, y_data, x_label, y_label, title):
 
 
 # Line plot with 2 different y values
-def lineplot2y(x_data, x_label, y1_data, y1_color, y1_label, y2_data, y2_color, y2_label, title):
+def lineplot2y(x_data, y1_data, y2_data, x_label="", y1_color="#539caf", y1_label="", y2_color="#7663b0", y2_label="", title=""):
     # Each variable will actually have its own plot object but they
     # will be displayed in just one plot
     # Create the first plot object and draw the line
@@ -50,9 +50,9 @@ def lineplot2y(x_data, x_label, y1_data, y1_color, y1_label, y2_data, y2_color, 
     ax2.spines['right'].set_visible(True)
 
 
-def histogram(data, x_label, y_label, title):
+def histogram(data, n_bins, cumulative=False, x_label = "", y_label = "", title = ""):
     _, ax = plt.subplots()
-    ax.hist(data, color = '#539caf')
+    ax.hist(data, n_bins = n_bins, cumulative = cumulative, color = '#539caf')
     ax.set_ylabel(y_label)
     ax.set_xlabel(x_label)
     ax.set_title(title)
@@ -60,13 +60,17 @@ def histogram(data, x_label, y_label, title):
 
 
 # Overlay 2 histograms to compare them
-def overlaid_histogram(data1, data1_name, data1_color, data2, data2_name, data2_color, x_label, y_label, title):
-    # Set the bounds for the bins so that the two distributions are
-    # fairly compared
+def overlaid_histogram(data1, data2, n_bins = 0, data1_name="", data1_color="#539caf", data2_name="", data2_color="#7663b0", x_label="", y_label="", title=""):
+    # Set the bounds for the bins so that the two distributions are fairly compared
     max_nbins = 10
     data_range = [min(min(data1), min(data2)), max(max(data1), max(data2))]
     binwidth = (data_range[1] - data_range[0]) / max_nbins
-    bins = np.arange(data_range[0], data_range[1] + binwidth, binwidth)
+
+
+    if n_bins == 0
+    	bins = np.arange(data_range[0], data_range[1] + binwidth, binwidth)
+    else: 
+    	bins = n_bins
 
     # Create the plot
     _, ax = plt.subplots()
@@ -79,7 +83,7 @@ def overlaid_histogram(data1, data1_name, data1_color, data2, data2_name, data2_
 
 
 # Probability Density Function
-def densityplot(x_data, density_est, x_label, y_label, title):
+def densityplot(x_data, density_est, x_label="", y_label="", title=""):
     _, ax = plt.subplots()
     ax.plot(x_data, density_est(x_data), color = '#539caf', lw = 2)
     ax.set_ylabel(y_label)
@@ -88,7 +92,7 @@ def densityplot(x_data, density_est, x_label, y_label, title):
 
 
 
-def barplot(x_data, y_data, error_data, x_label, y_label, title):
+def barplot(x_data, y_data, error_data, x_label="", y_label="", title=""):
     _, ax = plt.subplots()
     # Draw bars, position them in the center of the tick mark on the x-axis
     ax.bar(x_data, y_data, color = '#539caf', align = 'center')
@@ -101,7 +105,7 @@ def barplot(x_data, y_data, error_data, x_label, y_label, title):
 
 
 
-def stackedbarplot(x_data, y_data_list, y_data_names, colors, x_label, y_label, title):
+def stackedbarplot(x_data, y_data_list, colors, y_data_names="", x_label="", y_label="", title=""):
     _, ax = plt.subplots()
     # Draw bars, one category at a time
     for i in range(0, len(y_data_list)):
@@ -118,7 +122,7 @@ def stackedbarplot(x_data, y_data_list, y_data_names, colors, x_label, y_label, 
 
 
 
-def groupedbarplot(x_data, y_data_list, y_data_names, colors, x_label, y_label, title):
+def groupedbarplot(x_data, y_data_list, colors, y_data_names="", x_label="", y_label="", title=""):
     _, ax = plt.subplots()
     # Total width for all bars at one x location
     total_width = 0.8
@@ -140,7 +144,7 @@ def groupedbarplot(x_data, y_data_list, y_data_names, colors, x_label, y_label, 
 
 
 
-def boxplot(x_data, y_data, base_color, median_color, x_label, y_label, title):
+def boxplot(x_data, y_data, base_color="#539caf", median_color="#297083", x_label="", y_label="", title=""):
     _, ax = plt.subplots()
 
     # Draw boxplots, specifying desired style
