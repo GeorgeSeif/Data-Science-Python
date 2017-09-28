@@ -23,7 +23,8 @@ To install all of the libraries, run the commands in the "install.txt" file. The
 
 ## Files
 - **ml_helpers.py:** Machine Learning helper functions. Adapted from my [Python Machine Learning](https://github.com/GeorgeSeif/Python-Machine-Learning) repository
-- **plt_helpers:** Helper functions to make plotting easy in Matplotlib.
+- **plt_helpers.py:** Helper functions to make plotting easy in Matplotlib.
+- **statistics_helpers.py:** Helper functions for computing dataset statistics
 - **explore_wine_data.py:** Exploratory data analysis of the wine dataset from sklearn using visualisations. Includes data analysis using histogram, scatterplot, bee swarm plot, and cumulative distribution function.
 - **statistics_iris.py:** Compute various statistics of the iris dataset features such as histogram, min, max, median, mean, and variance.
 - **covariance_boston.py:** Compute the covariance matrix of the Boston Housing dataset. These matrices can sometimes give faster insight into which variables are related rather than creating scatter plots.
